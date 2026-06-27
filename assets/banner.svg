@@ -49,7 +49,7 @@
   <!-- Small details / nodes representing Actor & Critic -->
   <g font-family="monospace" font-size="12" fill="#94a3b8" opacity="0.8">
     <circle cx="200" cy="200" r="6" fill="#38bdf8" />
-    <text x="200" y="185" text-anchor="middle">ACTOR (Policy &pi;)</text>
+    <text x="200" y="185" text-anchor="middle">ACTOR (Policy π)</text>
 
     <circle cx="1000" cy="200" r="6" fill="#fb7185" />
     <text x="1000" y="185" text-anchor="middle">CRITIC (Value V / Q)</text>

@@ -9,7 +9,9 @@ Actor-Critic architectures represent a cornerstone paradigm in Reinforcement Lea
 
 The implementation of Actor-Critic loops has transitioned from basic tabular formulations to deep distributed policy networks and sample-efficient off-policy maximum entropy systems.
 
+```mermaid
 [Tabular Actor-Critic (Barto et al., 1983)] ---> [Deep Synchronous/Asynchronous (A2C/A3C, 2016)] ---> [Maximum Entropy Off-Policy (SAC, 2018-Present)](Rigid State-Lookup Matrix)                    (Multi-Threaded Distributed CPU/GPU Loops)             (Soft Value Functions / Automated Exploration)
+```
 
 *   **The Foundational Tabular Era (Barto, Sutton, & Anderson, 1983)**
     *   *Concept:* The structural milestone inspired by biological learning. It utilized basic temporal difference (TD) errors to update a rigid state-lookup matrix, where the Actor stored action preferences and the Critic tracked state utilities.

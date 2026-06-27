@@ -78,3 +78,17 @@ Deploying deep Actor-Critic loops across scalable computing infrastructure requi
 | [Kinetic Control Stacks for Advanced Humanoid Robotics](docs/kinetic_control_humanoid_robotics.md) | **Application:** Drives real-time torque and posture calculations for complex bipedal or quadrupedal machines. Off-policy Maximum Entropy Actor-Critic networks (SAC) run locally on edge hardware, continuously interpreting streaming orientation sensor data to make microsecond kinetic adjustments over uneven terrains. | 2003 | [Policy Gradient Methods for Robotics](https://www.robots.ox.ac.uk/~johan/peters_schaal_2003.pdf) |
 | [High-Frequency Multi-Agent Autonomous Asset Trading](docs/high_frequency_multi_agent_trading.md) | **Application:** Orchestrates high-volume algorithmic trading positions across highly volatile financial markets. Distributed Actor networks execute fast macro-portfolio distributions, while deep Critic networks track systemic market covariance metrics, adjusting stop-loss protection limits dynamically during sudden macro-economic shifts. | 2001 | [Learning to Trade with Recurrent Reinforcement Learning](https://ieeexplore.ieee.org/document/975003) |
 
+---
+
+## 📈 Star History
+
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Actor-Critic-Architectures&type=date&legend=bottom-right">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Actor-Critic-Architectures&type=date&theme=dark&legend=bottom-right" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Actor-Critic-Architectures&type=date&legend=bottom-right" />
+  <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Actor-Critic-Architectures&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
+

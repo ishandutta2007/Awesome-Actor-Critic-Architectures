@@ -1,11 +1,24 @@
 # Awesome-Actor-Critic-Architectures
-## Actor-Critic Architectures in AI: Evolution, Variants, Types, & Applications
+
+<div align="center">
+  <img src="assets/banner.svg" alt="Awesome Actor-Critic Architectures Banner" width="100%" />
+
+  <p>
+    <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Actor-Critic-Architectures/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Actor-Critic-Architectures?style=flat-square" alt="Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Actor-Critic-Architectures/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Actor-Critic-Architectures?style=flat-square" alt="Forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-Actor-Critic-Architectures/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Actor-Critic-Architectures?style=flat-square" alt="License"/></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+  </p>
+
+  <p><strong>A curated repository exploring the evolution, variants, processing layouts, safety mitigations, and real-world frontier applications of Actor-Critic frameworks in Deep Reinforcement Learning.</strong></p>
+</div>
+
+---
+
+## 📖 Introduction
 
 Actor-Critic architectures represent a cornerstone paradigm in Reinforcement Learning (RL), elegantly combining the strengths of both value-based and policy-based methods. The architecture splits the learning agent into two distinct, specialized entities: the **Actor**, which parameterizes the policy ($\pi(a|s)$) and chooses actions, and the **Critic**, which estimates the value function ($V(s)$ or $Q(s,a)$) and evaluates those actions. By using the Critic's low-variance feedback to modulate the Actor's policy gradient steps, Actor-Critic models achieve stable convergence, reduce sample complexity, and excel in high-dimensional, continuous control environments.
 
 ---
 
-## 1. The Chronological Evolution
+## ⏳ 1. The Chronological Evolution
 
 The implementation of Actor-Critic loops has transitioned from basic tabular formulations to deep distributed policy networks and sample-efficient off-policy maximum entropy systems.
 
@@ -22,9 +35,7 @@ flowchart LR
 | [The Deep Distributed Era](docs/deep_distributed_a2c_a3c.md) | <ul><li>**Concept:** Merged the framework with deep neural networks. **Asynchronous Advantage Actor-Critic (A3C)** utilized multiple parallel CPU worker threads, each interacting with an independent environment clone and updating a global model asynchronously. Its counterpart, **A2C (Advantage Actor-Critic)**, synchronized these workers to utilize modern GPU matrix parallelization efficiently.</li><li>**Significance:** Eliminated the strict need for massive, memory-heavy replay buffers by using parallel decorrelated data streams to stabilize deep gradients.</li></ul> | 2016 | [Asynchronous Methods for Deep Reinforcement Learning](https://arxiv.org/abs/1602.01783) |
 | [The Off-Policy & Maximum Entropy Era](docs/off_policy_max_entropy_sac.md) | <ul><li>**Concept:** The modern production standard for complex continuous physical tasks. Algorithms like **Soft Actor-Critic (SAC)** augmented the core framework with Information Theory, training the Actor to maximize both the expected cumulative reward and the **entropy of the policy**.</li><li>**Significance:** Maximized sample efficiency via off-policy data reuse while preventing premature policy collapse by encouraging the model to explore alternative, non-deterministic action strategies organically.</li></ul> | 2018 | [Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor](https://arxiv.org/abs/1801.01290) |
 
----
-
-## 2. Core Functional & Advantage Variants
+## ⚙️ 2. Core Functional & Advantage Variants
 
 Actor-Critic frameworks are strictly categorized based on how the Critic formulates its baseline valuation signal to optimize the Actor's gradient update.
 
@@ -36,7 +47,7 @@ Actor-Critic frameworks are strictly categorized based on how the Critic formula
 
 ---
 
-## 3. Structural Storage & System Processing Types
+## 💾 3. Structural Storage & System Processing Types
 
 Depending on the hardware infrastructure parameters and sample data constraints, Actor-Critic processing networks utilize distinct execution memory layouts.
 
@@ -48,7 +59,7 @@ Depending on the hardware infrastructure parameters and sample data constraints,
 
 ---
 
-## 4. Production Engineering Challenges & Mitigations
+## 🛠️ 4. Production Engineering Challenges & Mitigations
 
 Deploying deep Actor-Critic loops across scalable computing infrastructure requires balancing value estimation feedback delays against hardware stability limits.
 
@@ -59,7 +70,7 @@ Deploying deep Actor-Critic loops across scalable computing infrastructure requi
 
 ---
 
-## 5. Frontier Real-World AI Applications
+## 🚀 5. Frontier Real-World AI Applications
 
 | Application | Description & Details | First Used | Seminal Paper |
 | :--- | :--- | :---: | :--- |
